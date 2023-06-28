@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage{multicol}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{CJKutf8}
+\usepackage[dvipsnames]{xcolor} % Required for \textcolor
+\usepackage{pxfonts} % Required for solid diamond / heart symbol
+\newcommand*{\ccc}{\textcolor{ForestGreen}{\clubsuit}}
+\newcommand*{\ddd}{\textcolor{Orange}{\vardiamondsuit}}
+\newcommand*{\hhh}{\textcolor{Mahogany}{\varheartsuit}}
+\newcommand*{\sss}{\textcolor{Blue}{\spadesuit}}
+
+\title{RULER Uses Level-Elastic Relays}
+\author{O.Y. Chung $\hhh\sss\ccc\ddd$}
+\date{June 2023}
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+\end{CJK*}
+\maketitle
+
+\begin{multicols}{2}
+
+\section{Introduction}
+Exploiting relay patterns not tied to level, RULER supports full shape relays in both constructive or competitive auction with minimal rules to memorize.
+
+\section{Shape Listing}
+Near the end of relay, where the shape showing side has only a few possible shapes (typically 5 or less), the next relay will be listing exact shapes. For simplicity, the shape priority is defined as:
+
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item more extreme shapes bids higher, where "more extreme" means:
+    \begin{enumerate}
+        \setlength\itemsep{-0.2em}
+        \item longest suit longer \\
+            e.g. $6610 \rightarrow 7222$
+        \item second longest suit longer \\
+            e.g. $5440 \rightarrow 5521$
+        \item third longest suit longer \\
+            e.g. $5431 \rightarrow 5540$
+    \end{enumerate}
+    \item with same shape, longing higher suits bids higher
+\end{enumerate}
+
+\noindent Shape answering is bounded by 3NT. When out of steps within 3NT, overload the uncoverred shapes on shapes within 3NT with nearest major length. For example, when knowing 6+$\ddd$, 0-1$\ccc$s:
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item 3$\hhh$ = 3361 or 3370
+    \item 3$\sss$ = 2371 or 2281 or 1381 or 2380
+    \item 3NT = 3271 or 3181 or 3280
+\end{enumerate}
+
+\section{Relay Patterns}
+\subsection{444766}
+Bidding starts with showing one suit. If game-forcing power is promised, next step is to know the second suit.
+Suit order is $\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$. If there is no second suit, it auto-zooms to the 1-suiter cases. To summarize, the steps are:
+
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item \textbf{\underline{4}} in suit 1
+    \item \textbf{\underline{4}} in suit 2
+    \item \textbf{\underline{4}} in suit 3
+    \item \textbf{\underline{7}} in current suit
+    \item \textbf{\underline{6}} in current suit, 6-(331)
+    \item \textbf{\underline{6}} in current suit, 6-(322)
+    \item (and onwards) auto zoom balanced shapes \\
+        (4-333/5-233/323/332)
+\end{enumerate}
+
+\subsubsection{4446 when lack of space}
+In lack of space, the step for \textbf{\underline{7}} of 444766 must not be higher than 2NT. The set of windows will be changed to 4446, where 6 means 6 or more cards in the known suit.
+
+\noindent Since relay is bounded at 3NT, 3NT will become catch all in lack of space. For example, when relay bid is $3\ddd$, known suit is $\sss$:
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item 3$\hhh$ = 4+$\hhh$
+    \item 3$\sss$ = 4+$\ccc$
+    \item 3NT = 4+$\ddd$ or 6+$\sss$ or 4-(333) or 5-(332)
+\end{enumerate}
+
+\pagebreak
+
+\subsection{R564 (after 4 of 444766)}
+After 2 suits are shown, 4 windows are used to break down the 2-suit cases.
+
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item \textbf{\underline{R}}everser (higher suit is longer)
+    \item 5-\textbf{\underline{5}}
+    \item \textbf{\underline{6}}-4
+    \item \textbf{\underline{4}}-(4 or shorter)
+    \item (and onwards) auto zoom 5-4 shapes \\
+        (5-4-22/13/31/04/40)
+\end{enumerate}
+
+\section{$<$After Column Break$>$}
+
+\end{multicols}
+\end{document}
