@@ -54,7 +54,7 @@ Near the end of relay, where the shape showing side has only a few possible shap
     \item 3NT = 3271 or 3181 or 3280
 \end{itemize}
 
-\section{Relay Patterns}
+\section{Elastic Relay Patterns}
 
 \subsection{General Principle}
 \begin{enumerate}
@@ -123,6 +123,8 @@ After 2 suits are shown, 4 windows are used to break down the 2-suit cases. Inap
         (5-4-22/13/31/04/40)
 \end{enumerate}
 
+\noindent The 3 windows 564 are only applicable when it is at 3$\ddd$ or below.
+
 \subsection{111}\label{sec:111}
 After 7 of \nameref{sec:444766} or 6 of \nameref{sec:4446}. \\
 After 1-suiter is shown, 3 windows are used to show shortage. Suit order for shortage is $\sss \rightarrow \hhh \rightarrow \ddd \rightarrow \ccc$.
@@ -170,6 +172,62 @@ Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards fro
     \item 2NT = $\sss$ longer than $\hhh$ ($\hhh$ -2/-3)
     \item 3$\ccc$+ = major suits reduces similar length \\
         (each major suit reduces at least 1 card)
+\end{itemize}
+
+\section{Inelastic Relay Patterns}
+
+\subsection{2$\hhh$ to 3NT Balanced}
+\label{sec:2h-3nt-bal}
+
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2$\hhh$ = 4-5 $\hhh$s
+    \item 2$\sss$ = 4-5 $\sss$s, not 4333
+    \item 2NT = suit lengths $<=$ 3344
+    \item 3$\ccc$ = 5 $\ccc$s
+    \item 3$\ddd$ = 4333
+    \item 3$\hhh$ to 3NT = 5 $\ddd$s
+\end{itemize}
+
+\noindent After 2$\hhh$ to 2$\sss$:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2NT = 3433/4423/4432
+    \item 3$\ccc$ = 5-(332)
+    \item 3$\ddd$ to 3NT = 4-(234/324/243/342)
+\end{itemize}
+
+\noindent Advanced usage: when there is no 4441 cases, let 2$\ccc$ relay include a 5+$\hhh$ GI case. Adjust as:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item move the 2$\hhh$ case by 2NT+ (auto accept GI)
+    \item split the 2$\sss$+ case as 2$\hhh$=min; 2$\sss$=max
+    \item move the 2NT+ case to 2$\ddd$, then partner 2$\hhh$ to show $\hhh$ GI case
+\end{itemize}
+
+\subsection{2$\hhh$ to 3NT Unbalanced}
+\label{sec:2h-3nt-unbal}
+Used only for hands with shortage. Not for hands like 5422, 6322 or 7222.
+
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2$\hhh$ = 1/2-suiter with $\hhh$
+    \item 2$\sss$ = 1/2-suiter with $\sss$
+    \item 2NT = 1/2-suiter with $\ccc$
+    \item 3$\ccc$ = 1-suiter with $\ddd$
+    \item 3$\ddd$+ = (4441)
+\end{itemize}
+
+\noindent After 2$\hhh$ to 3$\ccc$:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2NT = 2-suiter with $\sss$, cont' as \nameref{sec:R564}
+    \item 3$\ccc$ = 2-suiter with $\ccc$, cont' as \nameref{sec:R564}
+    \item 3$\ddd$ = 2-suiter with $\ddd$ \\
+        this is an exceptional case that we use 3$\hhh$ to relay for the shortage and use 3$\sss$ to probe 4M (if the other suit is $\hhh$ or $\sss$). One reason is we saved the step for 5-4-2-2 since that is inapplicable
+    \item 3$\hhh$ = 1-suiter with suit 1 shortage
+    \item 3$\sss$ = 1-suiter with suit 2 shortage
+    \item 3NT = 1-suiter with suit 3 shortage
 \end{itemize}
 
 \section{Opening Scheme}
@@ -242,8 +300,45 @@ Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards fro
         apply competitive bidding system
 \end{itemize}
 
-\columnbreak
+\subsection{After 1NT Open}
+This scheme is rather inelastic because upon any overcalls other than double or artificial 2$\ccc$, we should turn to competitive bidding (e.g. Lebensohl).
 
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2$\ccc$ = GF relay
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item 2$\ddd$ = any (4441)
+        \item 2$\hhh$ to 3NT = \nameref{sec:2h-3nt-bal}
+    \end{itemize}
+    \item 2$\ddd$ = any GI
+    \item 2$\hhh$ to 3NT = \nameref{sec:2h-3nt-unbal}
+\end{itemize}
+
+\subsection{After Intermediate 2 Open}
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item \#1 = GI+ relay, cont' as \nameref{sec:444766}
+    \item \#2 to \#4 = transfer GI+ \\
+        short open suit if GF \\
+        match transfer first, then $\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$ \\
+        only non-GF response is rebid or follow transfer
+        
+\end{itemize}
+
+\section{Overcalling Scheme}
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item X = 12+ takeout or; \\
+        18+ when 1-level unavailable
+    \item 1$\ccc$ to 1$\sss$ = 14+ 5544 natural open \\
+        open lower suit when same length
+    \item 1NT = 15-18 BAL
+    \item 2$\ccc$ to 2$\sss$ (if 1-level of suit is available) = 10-13 5+ cards natural open
+    \item 2$\ccc$ to 2$\sss$ (if 1-level of suit is unavailable) = 13-17 5+ cards natural open (same continuation as 10-13 case)
+\end{itemize}
+
+\columnbreak
 $$ -end- $$
 
 \end{multicols}
