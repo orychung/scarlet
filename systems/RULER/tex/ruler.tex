@@ -3,6 +3,7 @@
 \usepackage[margin=0.6in]{geometry}
 \usepackage[fontsize=12pt]{fontsize}
 \usepackage{multicol}
+\usepackage{hyperref}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{CJKutf8}
 \usepackage[dvipsnames]{xcolor} % Required for \textcolor
@@ -24,7 +25,7 @@
 
 \begin{multicols}{2}
 
-\section{Introduction}
+\section{Abstract}
 Exploiting relay patterns not tied to level, RULER supports full shape relays in both constructive or competitive auction with minimal rules to memorize.
 
 \section{Shape Listing}
@@ -33,7 +34,7 @@ Near the end of relay, where the shape showing side has only a few possible shap
 \begin{enumerate}
     \setlength\itemsep{-0.2em}
     \item more extreme shapes bids higher, where "more extreme" means:
-    \begin{enumerate}
+    \begin{itemize}
         \setlength\itemsep{-0.2em}
         \item longest suit longer \\
             e.g. $6610 \rightarrow 7222$
@@ -41,62 +42,209 @@ Near the end of relay, where the shape showing side has only a few possible shap
             e.g. $5440 \rightarrow 5521$
         \item third longest suit longer \\
             e.g. $5431 \rightarrow 5540$
-    \end{enumerate}
+    \end{itemize}
     \item with same shape, longing higher suits bids higher
 \end{enumerate}
 
 \noindent Shape answering is bounded by 3NT. When out of steps within 3NT, overload the uncoverred shapes on shapes within 3NT with nearest major length. For example, when knowing 6+$\ddd$, 0-1$\ccc$s:
-\begin{enumerate}
+\begin{itemize}
     \setlength\itemsep{-0.2em}
     \item 3$\hhh$ = 3361 or 3370
     \item 3$\sss$ = 2371 or 2281 or 1381 or 2380
     \item 3NT = 3271 or 3181 or 3280
-\end{enumerate}
+\end{itemize}
 
 \section{Relay Patterns}
-\subsection{444766}
+
+\subsection{General Principle}
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item for GI+ relay, reserve \#1 for min \\
+        for 2X open, reserve 3X (rebid) for min,
+        that implies answers below 3X can be min or max
+    \item 3$\ddd$ is the highest relay bid
+    \item during relay and before exact shape shown: \\
+        use 3$\hhh/\sss$ to probe 4$\hhh/\sss$
+    \item do not answer higher than 3NT \\
+        (reserve 4$\ccc$+ for auto-kc answer)
+    \item when no more to relay, example scheme is:
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item use 4$\ccc$ for any SI
+        \item use lowest steps (one for each shown 4+card suit) \\
+            for RKCB (do not use 3NT/4$\hhh$/4$\sss$)
+    \end{itemize}
+\end{enumerate}
+
+\subsection{444766}\label{sec:444766}
 Bidding starts with showing one suit. If game-forcing power is promised, next step is to know the second suit.
 Suit order is $\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$. If there is no second suit, it auto-zooms to the 1-suiter cases. To summarize, the steps are:
 
 \begin{enumerate}
     \setlength\itemsep{-0.2em}
-    \item \textbf{\underline{4}} in suit 1
-    \item \textbf{\underline{4}} in suit 2
-    \item \textbf{\underline{4}} in suit 3
-    \item \textbf{\underline{7}} in current suit
-    \item \textbf{\underline{6}} in current suit, 6-(331)
-    \item \textbf{\underline{6}} in current suit, 6-(322)
+    \item \textbf{\underline{4}}+ cards in in suit 1, cont' as 
+    \nameref{sec:R564}
+    \item \textbf{\underline{4}}+ cards in in suit 2, cont' as
+    \nameref{sec:R564}
+    \item \textbf{\underline{4}}+ cards in in suit 3, cont' as
+    \nameref{sec:R564}
+    \item \textbf{\underline{7}}+ cards in known suit, cont' as
+    \nameref{sec:111}
+    \item \textbf{\underline{6}} cards in known suit, 6-(331)
+    \item \textbf{\underline{6}} cards in known suit, 6-(322)
     \item (and onwards) auto zoom balanced shapes \\
         (4-333/5-233/323/332)
 \end{enumerate}
 
-\subsubsection{4446 when lack of space}
-In lack of space, the step for \textbf{\underline{7}} of 444766 must not be higher than 2NT. The set of windows will be changed to 4446, where 6 means 6 or more cards in the known suit.
+\pagebreak
+
+\subsubsection{4446 when lack of space}\label{sec:4446}
+In lack of space, the step for \textbf{\underline{7}} of 444766 must not be higher than 2NT. The set of windows will be changed to 4446, where 6 means 6 or more cards in the known suit, cont' as \nameref{sec:111}.
 
 \noindent Since relay is bounded at 3NT, 3NT will become catch all in lack of space. For example, when relay bid is $3\ddd$, known suit is $\sss$:
-\begin{enumerate}
+\begin{itemize}
     \setlength\itemsep{-0.2em}
     \item 3$\hhh$ = 4+$\hhh$
     \item 3$\sss$ = 4+$\ccc$
     \item 3NT = 4+$\ddd$ or 6+$\sss$ or 4-(333) or 5-(332)
-\end{enumerate}
+\end{itemize}
 
-\pagebreak
-
-\subsection{R564 (after 4 of 444766)}
-After 2 suits are shown, 4 windows are used to break down the 2-suit cases.
+\subsection{R564}\label{sec:R564}
+After any 4 of \nameref{sec:444766}. \\
+After 2 suits are shown, 4 windows are used to break down the 2-suit cases. Inapplicable window should not occupy a step, for example, in RULER, the \textbf{\underline{R}}everser step is inapplicable.
 
 \begin{enumerate}
     \setlength\itemsep{-0.2em}
     \item \textbf{\underline{R}}everser (higher suit is longer)
-    \item 5-\textbf{\underline{5}}
+    \item 5-\textbf{\underline{5}} (inapplicable if bid higher suit first)
     \item \textbf{\underline{6}}-4
-    \item \textbf{\underline{4}}-(4 or shorter)
+    \item \textbf{\underline{4}}-(4 or shorter) (inapplicable if 5+)
     \item (and onwards) auto zoom 5-4 shapes \\
         (5-4-22/13/31/04/40)
 \end{enumerate}
 
-\section{$<$After Column Break$>$}
+\subsection{111}\label{sec:111}
+After 7 of \nameref{sec:444766} or 6 of \nameref{sec:4446}. \\
+After 1-suiter is shown, 3 windows are used to show shortage. Suit order for shortage is $\sss \rightarrow \hhh \rightarrow \ddd \rightarrow \ccc$.
+
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item 0-\textbf{\underline{1}} cards in suit 1
+    \item 0-\textbf{\underline{1}} cards in suit 2
+    \item 0-\textbf{\underline{1}} cards in suit 3
+    \item (and onwards) auto zoom 6-(322) and 7222
+\end{enumerate}
+
+\subsection{1NT To-Play}\label{sec:1nt-to-play}
+Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards from a total of 16 max suit length (4444/4435/4255). Use of this scheme is an optional advancement. It can be replaced by saying opener's hand is more specific.
+
+\columnbreak
+
+\noindent Here are the response to the 2$\ccc$ relay:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2$\ddd$ = min
+    \item 2$\hhh$ = major suits reduce 0-1 cards
+    \item 2$\sss$+ = major suits reduce 2-3 cards
+\end{itemize}
+
+\noindent For major suits reduce 0-1 cards:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2NT = $\hhh$ longer than $\sss$ ($\sss$ -1) \\
+        To 1$\ccc$-1NT (4444): 3433/3424/3442 \\
+        To 1$\ddd$-1NT (4435): 3433/3424/3415 \\
+        To 1$\hhh$-1NT (4255): 3244/3235/3253
+    \item 3$\ccc$ = $\sss$ longer than $\hhh$ ($\hhh$ -1)
+    \item 3$\ddd$+ = major suits reduces similar length \\
+        (major suits reduces 0 cards)
+\end{itemize}
+
+\noindent For major suits reduce 2-3 cards:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2$\sss$ = $\hhh$ longer than $\sss$ ($\sss$ -2/-3) \\
+        To 1$\ccc$-1NT (4444): 2434/2443/1444 \\
+        To 1$\ddd$-1NT (4435): 2434/2425/1435 \\
+        To 1$\hhh$-1NT (4255): 2245/2254/1255
+    \item 2NT = $\sss$ longer than $\hhh$ ($\hhh$ -2/-3)
+    \item 3$\ccc$+ = major suits reduces similar length \\
+        (each major suit reduces at least 1 card)
+\end{itemize}
+
+\section{Opening Scheme}
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 1$\ccc$ to 1$\sss$ = 14+ 5542 natural open \\
+        open lower suit when same length
+    \item 1NT = 10-13 BAL or (4441)
+    \item 2$\ccc$ to 2$\sss$ = 10-13 5+ cards natural open \\
+        open major suit, then lower suit when same length
+        ($\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$)
+    \item 3$\ccc$ onwards = any preemptive scheme you like
+\end{itemize}
+
+\subsection{After Strong 1 Open}
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item \#1 (or XX) = 8+ relay
+    \item \#2 to \#6 or double raise = to play
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item to 1$\ccc$, SO length is 5555 (1NT $<=$ 4444)
+        \item to 1$\ddd$, SO length is 5546 (1NT $<=$ 4435)
+        \item to 1$\hhh$, SO length is 5366 (1NT $<=$ 4255)
+        \item to 1$\sss$, SO length is 1555
+    \end{itemize}
+    \item \#7 to \#9 = GI+ splinter
+\end{itemize}
+
+\subsubsection{After Relay to Strong 1 Open}
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item \#1 = 14-16 \\
+        after this:
+        \begin{itemize}
+            \setlength\itemsep{-0.2em}
+            \item \#1 = 10+ GF
+            \item \#2 to \#5 = to play \\
+                apply competitive bidding system
+        \end{itemize}
+    \item \#2+ = 444766 \\
+        after any response:
+        \begin{itemize}
+            \setlength\itemsep{-0.2em}
+            \item \#1 = normal relay
+            \item \#2 to \#5 = relay with shortage
+        \end{itemize}
+\end{itemize}
+
+\subsubsection{After To-Play}
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 1NT/2M = 17-19 NF GI \\
+        apply competitive bidding system
+    \item \#1 (after excluding 1NT/2M) = 20+ \\
+        as strong probe if To-Play bid is less specific:
+        \begin{itemize}
+            \setlength\itemsep{-0.2em}
+            \item \#1 = GF relay (resume \nameref{sec:444766})
+            \item \#2 to \#6 = to play (double neg)
+        \end{itemize}
+        as relay ask if To-Play bid is 1NT or specific:
+        \begin{itemize}
+            \setlength\itemsep{-0.2em}
+            \item \#1 = min
+            \item \#2+ = GF (as \nameref{sec:444766} or
+                \nameref{sec:1nt-to-play} if To-Play bid is 1NT)
+        \end{itemize}
+    \item \#2+ = 17-19 NF GI \\
+        apply competitive bidding system
+\end{itemize}
+
+\columnbreak
+
+$$ -end- $$
 
 \end{multicols}
 \end{document}
