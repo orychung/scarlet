@@ -1,0 +1,112 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage[fontsize=12pt]{fontsize}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{CJKutf8}
+\usepackage[dvipsnames]{xcolor} % Required for \textcolor
+\usepackage{pxfonts} % Required for solid diamond / heart symbol
+\newcommand*{\ccc}{\textcolor{ForestGreen}{\clubsuit}}
+\newcommand*{\ddd}{\textcolor{Orange}{\vardiamondsuit}}
+\newcommand*{\hhh}{\textcolor{Mahogany}{\varheartsuit}}
+\newcommand*{\sss}{\textcolor{Blue}{\spadesuit}}
+
+\title{Generalized 3-way Lebensohl (G3LBS)}
+\author{O.Y. Chung $\hhh\sss\ccc\ddd$}
+\date{June 2023}
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+\end{CJK*}
+\maketitle
+
+\begin{multicols}{2}
+
+\section{Abstract}
+Existing variants of Lebensohl focused on 3 cases: 1NT overcalled; double over 2-level open; and non-GF reverse. Some also forgoes invitational cases when suit is lower than opponents' suit. The generalization here extends it to apply whenever the bidding is below 2NT, no better system on (e.g. relays), and the bidding is possible to land on partial and game contracts, resulting in a memory-saving and effective competitive auction approach.
+
+\section{The 3-way Plan}
+Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally avaiable in this scheme.
+
+\begin{enumerate}
+    \setlength\itemsep{-0.2em}
+    \item SO: bid suit at 2-level, or one step below the 3-level suit bid.
+    \item GI: bid 2NT, then stop at the suit at 3-level \\
+    when it is a non-compulsory bid, GI with $\ccc$ case is included
+    \item GF: bid suit at 3-level, or perform the symbollic GF sequences of Lebenshol:
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item no 4M nor stopper: 3NT
+        \item 4M but no stopper: cuebid
+        \item no 4M but stopper: 2NT, then 3NT
+        \item 4M and stopper: 2NT, then cuebid
+    \end{itemize}
+    This can be regarded as a rule to bid 2NT when there is stopper in opponents' suit, with exception when opponents has no suit or $\ccc$ suit.
+\end{enumerate}
+
+\subsection{Typical Schemes}
+\subsubsection{1NT-2$\sss$-? or 2$\sss$-X-P-?}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Suit & SO & GI & FG \\ \hline
+    $\ccc$ & 2NT, P & (n/a) & 3$\ccc$ \\ \hline
+    $\ddd$ & 3$\ccc$, P & 2NT, 3$\ddd$ & 3$\ddd$ \\ \hline
+    $\hhh$ & 3$\ddd$, P & 2NT, 3$\hhh$ & 3$\hhh$ \\ \hline
+    4$\hhh$ & 3$\ddd$, P & 2NT, 3$\hhh$ & (2NT,) 3$\sss$ \\ \hline
+    no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
+\end{tabular}
+
+\subsubsection{1NT-2$\hhh$-? or 2$\hhh$-X-P-?}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Suit & SO & GI & FG \\ \hline
+    $\ccc$ & 2NT, P & (n/a) & 3$\ccc$ \\ \hline
+    $\ddd$ & 3$\ccc$, P & 2NT, 3$\ddd$ & 3$\ddd$ \\ \hline
+    $\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\sss$ \\ \hline
+    4$\sss$ & 2$\sss$ & 2NT, 3$\sss$ & (2NT,) 3$\hhh$ \\ \hline
+    no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
+\end{tabular}
+
+\subsubsection{1NT-2$\ddd$-? or 2$\ddd$-X-P-?}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Suit & SO & GI & FG \\ \hline
+    $\ccc$ & 2NT, P & (n/a) & 3$\ccc$ \\ \hline
+    $\hhh$ & 2$\hhh$ & 2NT, 3$\hhh$ & 3$\hhh$ \\ \hline
+    $\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\sss$ \\ \hline
+    4$\hhh$ & 2$\hhh$ & 2NT, 3$\hhh$ & (2NT,) 3$\ddd$ \\ \hline
+    4$\sss$ & 2$\sss$ & 2NT, 3$\sss$ & (2NT,) 3$\ddd$ \\ \hline
+    no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
+\end{tabular}
+
+\subsubsection{1NT-2$\ccc$-? or 2$\ccc$-X-P-?}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Suit & SO & GI & FG \\ \hline
+    $\ddd$ & 2$\ddd$ & 2NT, 3$\ddd$ & 3$\ddd$ \\ \hline
+    $\hhh$ & 2$\hhh$ & 2NT, 3$\hhh$ & 3$\hhh$ \\ \hline
+    $\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\sss$ \\ \hline
+    4$\hhh$ & 2$\hhh$ & 2NT, 3$\hhh$ & 3$\ccc$ \\ \hline
+    4$\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\ccc$ \\ \hline
+    no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
+\end{tabular}
+
+\section{Generalizations}
+\subsection{When Opponents Has No Suit or $\ccc$ Suit}
+
+\subsection{Enhance Major Fit Test from 4-card to Sub-optimal Length}
+
+\section{Situations Explained}
+\subsection{Opening Overcalled}
+\subsection{Relay Break}
+\subsection{Michaels Cuebid}
+\subsection{Opening overcalled}
+
+\columnbreak
+$$ -end- $$
+
+\end{multicols}
+\end{document}
