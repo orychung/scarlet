@@ -15,7 +15,7 @@
 
 \title{Generalized 3-way Lebensohl (G3LBS)}
 \author{O.Y. Chung $\hhh\sss\ccc\ddd$}
-\date{June 2023}
+\date{July 2023}
 
 \begin{document}
 
@@ -48,10 +48,10 @@ Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally a
 \end{enumerate}
 
 \subsection{Typical Schemes}
-\subsubsection{1NT-2$\sss$-? or 2$\sss$-X-P-?}
-\begin{tabular}{|c|c|c|c|}
+\subsubsection{2$\sss$-X-P-?}
+\begin{tabular}{c|c|c|c}
     \hline
-    Suit & SO & GI & FG \\ \hline
+    Suit & SO & GI & FG \\ \hline\hline
     $\ccc$ & 2NT, P & (n/a) & 3$\ccc$ \\ \hline
     $\ddd$ & 3$\ccc$, P & 2NT, 3$\ddd$ & 3$\ddd$ \\ \hline
     $\hhh$ & 3$\ddd$, P & 2NT, 3$\hhh$ & 3$\hhh$ \\ \hline
@@ -59,10 +59,10 @@ Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally a
     no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
 \end{tabular}
 
-\subsubsection{1NT-2$\hhh$-? or 2$\hhh$-X-P-?}
-\begin{tabular}{|c|c|c|c|}
+\subsubsection{2$\hhh$-X-P-?}
+\begin{tabular}{c|c|c|c}
     \hline
-    Suit & SO & GI & FG \\ \hline
+    Suit & SO & GI & FG \\ \hline\hline
     $\ccc$ & 2NT, P & (n/a) & 3$\ccc$ \\ \hline
     $\ddd$ & 3$\ccc$, P & 2NT, 3$\ddd$ & 3$\ddd$ \\ \hline
     $\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\sss$ \\ \hline
@@ -70,10 +70,10 @@ Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally a
     no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
 \end{tabular}
 
-\subsubsection{1NT-2$\ddd$-? or 2$\ddd$-X-P-?}
-\begin{tabular}{|c|c|c|c|}
+\subsubsection{2$\ddd$-X-P-?}
+\begin{tabular}{c|c|c|c}
     \hline
-    Suit & SO & GI & FG \\ \hline
+    Suit & SO & GI & FG \\ \hline\hline
     $\ccc$ & 2NT, P & (n/a) & 3$\ccc$ \\ \hline
     $\hhh$ & 2$\hhh$ & 2NT, 3$\hhh$ & 3$\hhh$ \\ \hline
     $\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\sss$ \\ \hline
@@ -82,10 +82,10 @@ Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally a
     no M & (SO at minor) & (n/a) & (2NT,) 3NT \\ \hline
 \end{tabular}
 
-\subsubsection{1NT-2$\ccc$-? or 2$\ccc$-X-P-?}
-\begin{tabular}{|c|c|c|c|}
+\subsubsection{2$\ccc$-X-P-?}
+\begin{tabular}{c|c|c|c}
     \hline
-    Suit & SO & GI & FG \\ \hline
+    Suit & SO & GI & FG \\ \hline\hline
     $\ddd$ & 2$\ddd$ & 2NT, 3$\ddd$ & 3$\ddd$ \\ \hline
     $\hhh$ & 2$\hhh$ & 2NT, 3$\hhh$ & 3$\hhh$ \\ \hline
     $\sss$ & 2$\sss$ & 2NT, 3$\sss$ & 3$\sss$ \\ \hline
@@ -95,12 +95,120 @@ Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally a
 \end{tabular}
 
 \section{Generalizations}
-\subsection{When Opponents Has No Suit or $\ccc$ Suit}
+\subsection{Super Accepts}
+For SO or $\ccc$ GI, there is a need to super accept to ensure bidding does not quit by partner's planned pass. All super accept bids are GF.
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item \#2: waiting (implies major fit if lack room to check the possible major, otherwise bit 3NT)
+    \item cuebid: stopper-ask
+    \item 3NT: no major fit
+    \item more: natural
+\end{itemize}
+
+\noindent Take 1NT-2$\sss$-? as example: \\
+\begin{tabular}{c|c|c|c|c}
+    \hline
+    Bid & 3$\ddd$ & 3$\hhh$ & 3$\sss$ & 3NT \\ \hline\hline
+    2NT & waiting & $\hhh$ & s/a & (avoided) \\ \hline
+    3$\ccc$ & (normal) & waiting & s/a & (avoided) \\ \hline
+    3$\ddd$ & (n/a) & (normal) & $\hhh$ fit & no $\hhh$ fit \\ \hline
+\end{tabular}
+
+\subsection{Cuebid on $\ccc$ Suit}
+When $\ccc$ is the suit to cuebid, to replenish the 2NT slow pattern, the 3$\ddd$ response can be used:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 3$\ddd$: $\ccc$ stopper
+    \item 3$\hhh$: no $\ccc$ stopper, check $\hhh$ fit
+    \item 3$\sss$: no $\ccc$ stopper, check $\sss$ fit
+    \item 3NT: no $\ccc$ stopper, no M fit
+\end{itemize}
+
+\subsection{No Suit to Cuebid}
+When opponents do not show any 5+card suit, treat 3$\ccc$ as opponents' suit. A $\ccc$ suit strong case can be merged into 3$\ccc$, using 3$\ddd$ response to show preference of 5$\ccc$ over 3NT.
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 3$\ddd$: 5$\ccc$ preference
+    \item 3$\hhh$: no 5$\ccc$ preference, check $\hhh$ fit
+    \item 3$\sss$: no 5$\ccc$ preference, check $\sss$ fit
+    \item 3NT: no 5$\ccc$ preference, no M fit
+\end{itemize}
+
+\noindent The no major GF case can also include an extra breakdown of meaning:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 2NT-then-3NT if honors distributes evenly across suits
+    \item direct 3NT if honors distributes unevenly across suits
+\end{itemize}
+
+\subsection{Suit Selection}
+When another suit is shown, and the transferred suit is not responder's suit, responder may choose a previously shown suit, without a GF meaning. This signoff has higher priority than any super accepts.
+
+\noindent Take 1$\sss$-P-2$\ddd$-2$\hhh$-? as example: \\
+\begin{tabular}{c|c|c|c|c}
+    \hline
+    Bid & 3$\ddd$ & 3$\hhh$ & 3$\sss$ & 3NT \\ \hline\hline
+    2NT & $\ddd$ SO & $\sss$ fit & $\sss$ SO & no $\sss$ fit \\ \hline
+    3$\ccc$ & $\ddd$ NF & $\sss$ fit & $\sss$ SO & no $\sss$ fit \\ \hline
+\end{tabular}
+
+\noindent Take 1$\hhh$-P-2$\ddd$-2$\sss$-? as example: \\
+\begin{tabular}{c|c|c|c|c}
+    \hline
+    Bid & 3$\ddd$ & 3$\hhh$ & 3$\sss$ & 3NT \\ \hline\hline
+    2NT & $\ddd$ SO & $\hhh$ SO & $\hhh$ fit & no $\hhh$ fit \\ \hline
+    3$\ccc$ & $\ddd$ NF & $\hhh$ SO & $\hhh$ fit & no $\hhh$ fit \\ \hline
+    3$\ddd$ & (n/a) & $\hhh$ NF & $\hhh$ fit & no $\hhh$ fit \\ \hline
+\end{tabular}
+
+\noindent Take 1$\ccc$-P-1$\ddd$-2$\sss$-? as example: \\
+\begin{tabular}{c|c|c|c|c}
+    \hline
+    Bid & 3$\ddd$ & 3$\hhh$ & 3$\sss$ & 3NT \\ \hline\hline
+    2NT & $\ddd$ SO & $\hhh$ GF & s/a & catch all \\ \hline
+    3$\ccc$ & $\ddd$ NF & $\hhh$ GF & s/a & catch all \\ \hline
+    3$\ddd$ & (n/a) & $\hhh$ NF & $\hhh$ fit & no $\hhh$ fit \\ \hline
+\end{tabular}
 
 \subsection{Enhance Major Fit Test from 4-card to Sub-optimal Length}
+Optimal length for a major suit is extended to be:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item new suit: 5+ cards
+    \item partner min length: 8 - (min length)
+    \item partner max length: 8 - (max length) + 1
+    \item self max length: max length
+    \item self min length: min length + 2
+\end{itemize}
+Sub-optimal length is optimal length minus 1. Examples:
+\begin{itemize}
+    \setlength\itemsep{-0.2em}
+    \item 1$\hhh$-P-1$\sss$-2$\ccc$-?, to show GF:
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item 7+$\hhh$s: 3$\hhh$
+        \item 4+$\sss$s: 3$\sss$
+        \item 6$\hhh$s or 3$\sss$s: 3$\ccc$
+    \end{itemize}
+    \item 1$\hhh$-P-1$\sss$-2$\ccc$-P-P-?, to show GF:
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item 3+$\hhh$s: 3$\hhh$
+        \item 6+$\sss$s: 3$\sss$
+        \item 2$\hhh$s or 5$\sss$s: 3$\ccc$
+    \end{itemize}
+    \item 1NT-P-2$\ccc$-P-2$\ddd$-2$\sss$-?, to show GF:
+    \begin{itemize}
+        \setlength\itemsep{-0.2em}
+        \item 6+$\hhh$s: 3$\hhh$
+        \item 5$\hhh$s: 3$\sss$
+    \end{itemize}
+\end{itemize}
 
 \section{Situations Explained}
 \subsection{Opening Overcalled}
+The most basic and common examples are direct overcalls:
+
 \subsection{Relay Break}
 \subsection{Michaels Cuebid}
 \subsection{Opening overcalled}
