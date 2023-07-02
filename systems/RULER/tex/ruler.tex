@@ -5,9 +5,21 @@
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{CJKutf8}
+\usepackage{CJKutf8} % Required for CJK
 \usepackage[dvipsnames]{xcolor} % Required for \textcolor
 \usepackage{pxfonts} % Required for solid diamond / heart symbol
+\usepackage{enumitem}
+\setlist[itemize,1]{
+    topsep=-0.25em,
+    itemsep=-0.25em, left=0.1em,
+    label=$\blacktriangleright$,
+    after=\vspace{0.5em}
+}
+\setlist[itemize,2]{
+    topsep=-0.6em,
+    itemsep=-0.25em, left=0.1em,
+    label=$\vartriangleright$
+}
 \newcommand*{\ccc}{\textcolor{ForestGreen}{\clubsuit}}
 \newcommand*{\ddd}{\textcolor{Orange}{\vardiamondsuit}}
 \newcommand*{\hhh}{\textcolor{Mahogany}{\varheartsuit}}
@@ -57,7 +69,7 @@ Near the end of relay, where the shape showing side has only a few possible shap
 \section{Elastic Relay Patterns}
 
 \subsection{General Principle}
-\begin{enumerate}
+\begin{itemize}
     \setlength\itemsep{-0.2em}
     \item for GI+ relay, reserve \#1 for min \\
         for 2X open, reserve 3X (rebid) for min,
@@ -74,7 +86,7 @@ Near the end of relay, where the shape showing side has only a few possible shap
         \item use lowest steps (one for each shown 4+card suit) \\
             for RKCB (do not use 3NT/4$\hhh$/4$\sss$)
     \end{itemize}
-\end{enumerate}
+\end{itemize}
 
 \subsection{444766}\label{sec:444766}
 Bidding starts with showing one suit. If game-forcing power is promised, next step is to know the second suit.
@@ -129,13 +141,11 @@ After 2 suits are shown, 4 windows are used to break down the 2-suit cases. Inap
 After 7 of \nameref{sec:444766} or 6 of \nameref{sec:4446}. \\
 After 1-suiter is shown, 3 windows are used to show shortage. Suit order for shortage is $\sss \rightarrow \hhh \rightarrow \ddd \rightarrow \ccc$.
 
-\begin{enumerate}
+\begin{itemize}
     \setlength\itemsep{-0.2em}
-    \item 0-\textbf{\underline{1}} cards in suit 1
-    \item 0-\textbf{\underline{1}} cards in suit 2
-    \item 0-\textbf{\underline{1}} cards in suit 3
-    \item (and onwards) auto zoom 6-(322) and 7222
-\end{enumerate}
+    \item \#1/2/3 = 0-\textbf{\underline{1}} cards in suit 1/2/3
+    \item \#4+ = auto zoom 6-(322) and 7222
+\end{itemize}
 
 \subsection{1NT To-Play}\label{sec:1nt-to-play}
 Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards from a total of 16 max suit length (4444/4435/4255). Use of this scheme is an optional advancement. It can be replaced by saying opener's hand is more specific.
@@ -339,7 +349,7 @@ This scheme is rather inelastic because upon any overcalls other than double or 
 \end{itemize}
 
 \columnbreak
-$$ -end- $$
+$$\hhh\sss\ccc\ddd~The~end~\hhh\sss\ccc\ddd$$
 
 \end{multicols}
 \end{document}

@@ -5,9 +5,21 @@
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{CJKutf8}
+\usepackage{CJKutf8} % Required for CJK
 \usepackage[dvipsnames]{xcolor} % Required for \textcolor
 \usepackage{pxfonts} % Required for solid diamond / heart symbol
+\usepackage{enumitem}
+\setlist[itemize,1]{
+    topsep=-0.25em,
+    itemsep=-0.25em, left=0.1em,
+    label=$\blacktriangleright$,
+    after=\vspace{0.5em}
+}
+\setlist[itemize,2]{
+    topsep=-0.6em,
+    itemsep=-0.25em, left=0.1em,
+    label=$\vartriangleright$
+}
 \newcommand*{\ccc}{\textcolor{ForestGreen}{\clubsuit}}
 \newcommand*{\ddd}{\textcolor{Orange}{\vardiamondsuit}}
 \newcommand*{\hhh}{\textcolor{Mahogany}{\varheartsuit}}
@@ -31,21 +43,19 @@ Existing variants of Lebensohl focused on 3 cases: 1NT overcalled; double over 2
 \section{The 3-way Plan}
 Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally avaiable in this scheme.
 
-\begin{enumerate}
-    \setlength\itemsep{-0.2em}
+\begin{itemize}
     \item SO: bid suit at 2-level, or one step below the 3-level suit bid.
     \item GI: bid 2NT, then stop at the suit at 3-level \\
     when it is a non-compulsory bid, GI with $\ccc$ case is included
     \item GF: bid suit at 3-level, or perform the symbollic GF sequences of Lebenshol:
     \begin{itemize}
-        \setlength\itemsep{-0.2em}
         \item no 4M nor stopper: 3NT
         \item 4M but no stopper: cuebid
         \item no 4M but stopper: 2NT, then 3NT
         \item 4M and stopper: 2NT, then cuebid
     \end{itemize}
     This can be regarded as a rule to bid 2NT when there is stopper in opponents' suit, with exception when opponents has no suit or $\ccc$ suit.
-\end{enumerate}
+\end{itemize}
 
 \subsection{Typical Schemes}
 \subsubsection{2$\sss$-X-P-?}
@@ -98,7 +108,6 @@ Signoff (SO), invitational (GI), and game-forcing (GF) suit bids are generally a
 \subsection{Super Accepts}
 For SO or $\ccc$ GI, there is a need to super accept to ensure bidding does not quit by partner's planned pass. All super accept bids are GF.
 \begin{itemize}
-    \setlength\itemsep{-0.2em}
     \item \#2: waiting (implies major fit if lack room to check the possible major, otherwise bit 3NT)
     \item cuebid: stopper-ask
     \item 3NT: no major fit
@@ -117,7 +126,6 @@ For SO or $\ccc$ GI, there is a need to super accept to ensure bidding does not 
 \subsection{Cuebid on $\ccc$ Suit}
 When $\ccc$ is the suit to cuebid, to replenish the 2NT slow pattern, the 3$\ddd$ response can be used:
 \begin{itemize}
-    \setlength\itemsep{-0.2em}
     \item 3$\ddd$: $\ccc$ stopper
     \item 3$\hhh$: no $\ccc$ stopper, check $\hhh$ fit
     \item 3$\sss$: no $\ccc$ stopper, check $\sss$ fit
@@ -127,7 +135,6 @@ When $\ccc$ is the suit to cuebid, to replenish the 2NT slow pattern, the 3$\ddd
 \subsection{No Suit to Cuebid}
 When opponents do not show any 5+card suit, treat 3$\ccc$ as opponents' suit. A $\ccc$ suit strong case can be merged into 3$\ccc$, using 3$\ddd$ response to show preference of 5$\ccc$ over 3NT.
 \begin{itemize}
-    \setlength\itemsep{-0.2em}
     \item 3$\ddd$: 5$\ccc$ preference
     \item 3$\hhh$: no 5$\ccc$ preference, check $\hhh$ fit
     \item 3$\sss$: no 5$\ccc$ preference, check $\sss$ fit
@@ -136,7 +143,6 @@ When opponents do not show any 5+card suit, treat 3$\ccc$ as opponents' suit. A 
 
 \noindent The no major GF case can also include an extra breakdown of meaning:
 \begin{itemize}
-    \setlength\itemsep{-0.2em}
     \item 2NT-then-3NT if honors distributes evenly across suits
     \item direct 3NT if honors distributes unevenly across suits
 \end{itemize}
@@ -173,7 +179,6 @@ When another suit is shown, and the transferred suit is not responder's suit, re
 \subsection{Enhance Major Fit Test from 4-card to Sub-optimal Length}
 Optimal length for a major suit is extended to be:
 \begin{itemize}
-    \setlength\itemsep{-0.2em}
     \item new suit: 5+ cards
     \item partner min length: 8 - (min length)
     \item partner max length: 8 - (max length) + 1
@@ -182,24 +187,20 @@ Optimal length for a major suit is extended to be:
 \end{itemize}
 Sub-optimal length is optimal length minus 1. Examples:
 \begin{itemize}
-    \setlength\itemsep{-0.2em}
-    \item 1$\hhh$-P-1$\sss$-2$\ccc$-?, to show GF:
+    \item At 1$\hhh$-P-1$\sss$-2$\ccc$-?, to show GF:
     \begin{itemize}
-        \setlength\itemsep{-0.2em}
         \item 7+$\hhh$s: 3$\hhh$
         \item 4+$\sss$s: 3$\sss$
         \item 6$\hhh$s or 3$\sss$s: 3$\ccc$
     \end{itemize}
-    \item 1$\hhh$-P-1$\sss$-2$\ccc$-P-P-?, to show GF:
+    \item At 1$\hhh$-P-1$\sss$-2$\ccc$-P-P-?, to show GF:
     \begin{itemize}
-        \setlength\itemsep{-0.2em}
         \item 3+$\hhh$s: 3$\hhh$
         \item 6+$\sss$s: 3$\sss$
         \item 2$\hhh$s or 5$\sss$s: 3$\ccc$
     \end{itemize}
-    \item 1NT-P-2$\ccc$-P-2$\ddd$-2$\sss$-?, to show GF:
+    \item At 1NT-P-2$\ccc$-P-2$\ddd$-2$\sss$-?, to show GF:
     \begin{itemize}
-        \setlength\itemsep{-0.2em}
         \item 6+$\hhh$s: 3$\hhh$
         \item 5$\hhh$s: 3$\sss$
     \end{itemize}
@@ -207,14 +208,79 @@ Sub-optimal length is optimal length minus 1. Examples:
 
 \section{Situations Explained}
 \subsection{Opening Overcalled}
-The most basic and common examples are direct overcalls:
+These are the most commonly used situations.
+\subsubsection{1$\ccc$-2$\ddd$-?}
+\begin{itemize}
+    \item X: may possible agreements, examples:
+    \begin{itemize}
+        \item takeout with GI power
+        \item penalty
+    \end{itemize}
+    \item 2$\hhh$ / 2$\sss$: 5+M NF
+    \item 2NT: any GI or GF with stopper
+    \item 3$\ccc$: $\ccc$ GF
+    \item 3$\ddd$: either or both 4M GF without stopper
+    \item 3$\hhh$ / 3$\sss$: 5+M GF
+    \item 3NT: no 4M GF without stopper
+\end{itemize}
 
-\subsection{Relay Break}
+\subsubsection{1$\sss$-2$\hhh$-?}
+\begin{itemize}
+    \item X: may possible agreements, examples:
+    \begin{itemize}
+        \item takeout with GI power
+        \item maximal double with $\sss$ fit
+        \item penalty
+    \end{itemize}
+    \item 2$\sss$: 3+$\sss$s NF
+    \item 2NT: any GI or GF with stopper
+    \item 3$\ccc$: $\ccc$ GF or $\ddd$ NF
+    \item 3$\ddd$: $\ddd$ GF
+    \item 3$\hhh$: 2$\sss$s GF without stopper
+    \item 3$\sss$: 3+$\sss$s GF
+    \item 3NT: 0-1$\sss$s GF without stopper
+\end{itemize}
+
 \subsection{Michaels Cuebid}
-\subsection{Opening overcalled}
+For 2-suit showing bids like Michaels Cuebid, before opponent lands on a suit, we assume the higher suit (or anchor suit) is their suit.
+\subsubsection{1$\ccc$-2$\ccc$-?}
+\begin{itemize}
+    \item 2$\hhh$ / 2$\sss$: 5+M (6+?) NF
+    \item 2NT: any GI or GF with stopper
+    \item 3$\ccc$: $\ccc$ GF or $\ddd$ NF
+    \item 3$\ddd$: $\ddd$ GF
+    \item 3$\hhh$: 5+$\hhh$s GF
+    \item 3$\sss$: 4$\hhh$s GF without stopper
+    \item 3NT: 0-3$\hhh$s GF without stopper
+\end{itemize}
 
-\columnbreak
-$$ -end- $$
+\subsubsection{1$\ccc$(14+)-2$\ccc$-P-2$\hhh$-?}
+\begin{itemize}
+    \item 2$\sss$: 5+$\sss$s NF
+    \item 2NT: any GI or GF with stopper
+    \item 3$\ccc$: $\ccc$ GF or $\ddd$ NF
+    \item 3$\ddd$: $\ddd$ GF
+    \item 3$\hhh$: 4$\sss$s GF without stopper
+    \item 3$\sss$: 5+$\sss$s GF
+    \item 3NT: 0-3$\sss$s GF without stopper
+\end{itemize}
+
+\subsubsection{1$\sss$-2$\sss$-?}
+Just the same as 1$\sss$-2$\hhh$-?.
+
+\subsection{Unusual 2NT}
+When 2NT is artificial, adding the double call, G3LBS can still be applied.
+\subsubsection{1$\sss$-2NT-?}
+\begin{itemize}
+    \item X: any GI or GF with stopper
+    \item 3$\ccc$: $\ccc$ GF
+    \item 3$\ddd$: 4$\hhh$s and/or 2$\sss$s GF without stopper
+    \item 3$\hhh$: 5+$\hhh$s GF
+    \item 3$\sss$: 3+$\sss$s GF
+    \item 3NT: 0-1$\sss$ 0-3$\hhh$ GF without stopper
+\end{itemize}
+
+$$\hhh\sss\ccc\ddd~The~end~\hhh\sss\ccc\ddd$$
 
 \end{multicols}
 \end{document}
