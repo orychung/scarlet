@@ -17,7 +17,7 @@
 Designed for use in vulnerable side only, Just-Enough Two-Suit Openings (JETSO) brings maximized chance of safer signoffs and extra hint in competitive bidding by showing the hand type and for 2/3-suiter case an extra guarantee to hold one of two specified suits.
 
 \section{Elastic Relay Patterns}
-Following the design of RULER, the main relay is elastic. Minor adjustment to some relay window is needed:
+It is a pre-requisite to fully learn RULER before using JETSO because a lot of RULER relay patterns will be reused here.  Following the design of RULER, the main relay is elastic. Minor adjustment to some relay window is needed:
 \subsection{3R56}
 By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings is 4441 because 4 is for balanced hand type. To make best use of 3-suiter hands, a 3-suiter window is added:
 \begin{enumerate}
@@ -27,6 +27,14 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
     \item \textbf{\underline{6}}-4
 \end{enumerate}
 
+\noindent After the 3-suiter step, if there are more than one possible 3rd suit, use a further step 1 for a window for the case of longing the higher suit.
+
+\subsection{2/3-Suiter Open Power Ranges}
+\begin{itemize}
+    \item 3-suiter: min=11-14; max=15+
+    \item 2-suiter: min=10-13; med=14-17; max=18+
+\end{itemize}
+
 \section{Three Types of Hands and Openings}
 \begin{itemize}
     \item 1-suiter (6+ in one suit, 3- in other suits):
@@ -35,7 +43,7 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
         \item 10-13 $\sss$: 2$\sss$
         \item 11-13 $\ccc$: 3$\ccc$
         \item 11-13 $\ddd$: 3$\ddd$
-        \item 14+: 1$\ccc$
+        \item 14+: \hyperref[sec:1c]{1$\ccc$}
     \end{itemize}
     \item 2/3-suiter (54+ in 2 suits or 444+ in 3 suits):
     \begin{itemize}
@@ -45,15 +53,97 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
         \item 10-13 $\ccc$+$\ddd$: 2$\ccc$
         \item 10-13 $\ddd$+$\hhh$: 2$\ddd$
     \end{itemize}
-    \item balanced (4333/4432/5332):
+    \item BAL (4333/4432/5332):
     \begin{itemize}
-        \item 12-14: 1$\ccc$
+        \item 12-14: \hyperref[sec:1c]{1$\ccc$}
         \item 15-17: 1NT
-        \item 18+: 1$\ccc$
+        \item 18+: \hyperref[sec:1c]{1$\ccc$}
     \end{itemize}
 \end{itemize}
 
+\section{1$\ccc$ Open}\label{sec:1c}
+\begin{itemize}
+    \item 0-10: 1$\ddd$
+    \begin{itemize}
+        \item 12-14 BAL:
+        \begin{itemize}
+            \item with 4-5$\sss$s: \hyperref[sec:1c1d1h]{1$\sss$}
+            \item with 4-5$\hhh$s: \hyperref[sec:1c1d1h]{1NT}
+            \item otherwise: \hyperref[sec:1c1d1h]{1$\hhh$}
+        \end{itemize}
+        \item 18+ BAL: \hyperref[sec:1c1d1h]{1$\hhh$}
+        \item 14-19 1-suiter: 2$\ccc/\ddd/\hhh/\sss$ (same as \nameref{sec:1suit})
+        \item 20+ 1-suiter: \hyperref[sec:1c1d1h]{1$\hhh$}
+    \end{itemize}
+    \item 11+: 1$\hhh$/1$\sss$/1NT/2$\ccc$ 
+    for 4+$\hhh/\sss/\ccc/\ddd$
+    \begin{itemize}
+        \item relay: \#1 (\#1 = min; \#2+ = RULER 444766)
+        \item 1-suiter relay break: \#2-4 for 6+$\hhh/\sss/\ccc/\ddd$ (exclude the 4+card suit shown)
+    \end{itemize}
+\end{itemize}
+
+\subsection{After 1$\ccc$-1$\ddd$-1$\hhh$}\label{sec:1c1d1h}
+\begin{itemize}
+    \item 0-5: \hyperref[sec:1c1d1h1s]{1$\sss$}
+    \item 6-10: 1NT/2$\ccc/\ddd/\hhh/\sss$
+        (same response scheme as RULER open except all GF)
+    \item $<=$ 8 GI with 7+card: 3$\ccc/\ddd/\hhh/\sss$ (all natural)
+\end{itemize}
+
+\noindent The same scheme applies for 1$\ccc$-1$\ddd$-1$\sss$/1NT, with these modifications:
+\begin{itemize}
+    \item the 0-5 and 6-10 ranges are merged
+    \item there is a 4-card major raise (for 2$\sss$ over 1$\sss$, it further implies a mild GI)
+    \item no more GF responses are present (become some natural / artificial GI)
+\end{itemize}
+
+\subsection{After 1$\ccc$-1$\ddd$-1$\hhh$-1$\sss$}
+\label{sec:1c1d1h1s}
+\begin{itemize}
+    \item 12-14 or 18-21 BAL: 1NT
+    \begin{itemize}
+        \item BAL: P
+        \item 5+card: 2$\ccc/\ddd/\hhh/\sss$ (18+ may GI over 2M)
+    \end{itemize}
+    \item 22+ BAL: 2$\ccc$
+    \begin{itemize}
+        \item \hyperref[sec:1c1d1h1s2c2d]{2$\ddd$} = waiting
+        \item 2$\hhh$ to 3NT = Unbalanced 2$\hhh$ to 3NT
+    \end{itemize}
+    \item 20+ 1-suiter: 2$\ddd/\hhh/\sss$/NT for $\hhh/\sss/\ccc/\ddd$ (same as \nameref{sec:1suit})
+\end{itemize}
+
+\subsection{After 1$\ccc$-1$\ddd$-1$\hhh$-1$\sss$-2$\ccc$-2$\ddd$}
+\label{sec:1c1d1h1s2c2d}
+\begin{itemize}
+    \item 22-24: 2$\hhh$ (or 2$\sss$ if $\sss$ is 2-card longer than $\hhh$) \\
+        same as NT overcall, any extra 2M is NF
+    \item 25-26: 2NT (same as NT overcall)
+    \item 27+: 3$\ccc$-3NT (Accept NT GI)
+\end{itemize}
+
+\subsection{Relay Breaks in Cases Like \\
+1$\ccc$-1$\hhh$-1$\sss$-1NT}
+In 1$\ccc$-1$\hhh$-1$\sss$-1NT, the 1NT bid shows a minimum hand of 11-13. After this 1NT, \#1 is GF relay while \#2 to \#6 are natural SO. Pass cannot be used because the maximum of 1NT is still high enough for a game. After an SO bid is chosen, partner can bid further using a competitive bidding scheme (G3LBS).
+
+\section{2-Suiter Opens}
+
+\section{Other Opens}
+\subsection{1NT Open}
+RULER 1NT open scheme with the advancement to allow $\hhh$ SO. Such advancement can be used because there is no 4441 cases and it is valuable to have better SO option when vulnerable.
+
+\subsection{1-Suiter Open}\label{sec:1suit}
+\begin{itemize}
+    \item \#1 = GI+ relay, cont' as RULER 111
+    \item \#2-\#4 = transfer GI+ (similar to RULER)
+\end{itemize}
+
 \section{...}
+...\\
+...\\
+...\\
+...\\
 ...\\
 ...\\
 ...\\
