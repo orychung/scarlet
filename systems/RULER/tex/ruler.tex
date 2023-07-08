@@ -6,12 +6,9 @@
 \date{June 2023}
 
 \begin{document}
-
-\begin{CJK*}{UTF8}{gbsn}
-\end{CJK*}
 \maketitle
-
 \begin{multicols}{2}
+\begin{CJK*}{UTF8}{gt}
 
 \section{Abstract}
 Exploiting relay patterns not tied to level, RULER supports full shape relays in both constructive or competitive auction with minimal rules to memorize.
@@ -216,12 +213,12 @@ To be used after 2$\ddd$ = any GI.
 
 \section{Opening Scheme}
 \begin{itemize}
-    \item \hyperref[sec:strong-1]{1$\ccc$ to 1$\sss$} = 14+ 5542 natural open \\
+    \item \hyperref[sec:strong-1]{1$\ccc$ to 1$\sss$} = 14+ 5542 natural \\
     same length open lower suit
     \item \hyperref[sec:1n]{1NT} = 10-13 BAL or (4441)
-    \item \hyperref[sec:intermediate-2]{2$\ccc$ to 2$\sss$} = 10-13 5+ cards natural open \\
+    \item \hyperref[sec:intermediate-2]{2$\ccc$ to 2$\sss$} = 10-13 5+ cards natural \\
         55+ suit priority = $\hscd$
-    \item 3$\ccc$ onwards = any preemptive scheme you like
+    \item 2NT+ = whatever preemptive scheme
 \end{itemize}
 
 \subsection{After Strong 1 Open}\label{sec:strong-1}
@@ -278,12 +275,12 @@ To be used after 2$\ddd$ = any GI.
 This scheme is rather inelastic because upon any overcalls other than double or artificial 2$\ccc$, we should turn to competitive bidding (e.g. Lebensohl).
 
 \begin{itemize}
-    \item 2$\ccc$ = GF relay
+    \item 2$\ccc$ = GF relay (include $\hhh$ GI if no 4441)
     \begin{itemize}
         \item 2$\ddd$ = any (4441)
         \item 2$\hhh$ to 3NT = \nameref{sec:2h-3nt-bal}
     \end{itemize}
-    \item 2$\ddd$ = any GI
+    \item 2$\ddd$ = any GI ($\hhh$ is SO if no 4441)
     \item 2$\hhh$ to 3NT = \nameref{sec:2h-3nt-unbal}
 \end{itemize}
 
@@ -297,18 +294,35 @@ This scheme is rather inelastic because upon any overcalls other than double or 
 \end{itemize}
 
 \section{Overcalling Scheme}
+Over 1-level suit:
 \begin{itemize}
-    \item X = 12+ takeout or; \\
+    \item X = 12+ (13+ if BAL) takeout or; \\
         18+ when 1-level unavailable
-    \item 1$\ccc$ to 1$\sss$ = 14+ 5544 natural open \\
+    \item \hyperref[sec:strong-1]{1$\ccc$ to 1$\sss$} = 14+ 5544 natural \\
         open lower suit when same length
-    \item 1NT = 15-18 BAL
-    \item 2$\ccc$ to 2$\sss$ (if 1-level of suit is available) = 10-13 5+ cards natural open
-    \item 2$\ccc$ to 2$\sss$ (if 1-level of suit is unavailable) = 13-17 5+ cards natural open (same continuation as 10-13 case)
+    \item \hyperref[sec:1n]{1NT} = 15-18 BAL, no 4441
+    \item \hyperref[sec:intermediate-2]{2$\ccc$ to 2$\sss$} (jump) = 10-13 5+ cards natural
+    \item \hyperref[sec:intermediate-2]{2$\ccc$ to 2$\sss$} (non-jump) = 13-17 5+ cards natural
+    \item 2NT+ = whatever preemptive scheme
+    \item Cuebid at 3-level = strong and extreme hands to avoid X being passed
+\end{itemize}
+
+\noindent Over 1NT, X become 18+ or 15-18 BAL.
+
+\noindent Over 2-level, 15-18 BAL will bid 2NT.
+
+\subsection{After 1-Level Takeout}
+\begin{itemize}
+    \item 1$\ddd$ to 1$\sss$ = 0-7, G3LBS follows
+    \item 2$\ccc$ to 2$\sss$ (non-jump) = 0-9, G3LBS follows
+    \item 1NT = 8-10 with stopper, G3LBS follows
+    \item 2$\ccc$ to 2$\sss$ (jump) = 8-10, G3LBS follows
+    \item 2NT to 3NT = G3LBS
 \end{itemize}
 
 \columnbreak
 $$\hhh\sss\ccc\ddd~The~end~\hhh\sss\ccc\ddd$$
 
+\end{CJK*}
 \end{multicols}
 \end{document}
