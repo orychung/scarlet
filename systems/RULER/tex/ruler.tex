@@ -61,7 +61,7 @@ Near the end of relay, where the shape showing side has only a few possible shap
 
 \subsection{444766}\label{sec:444766}
 Bidding starts with showing one suit. If game-forcing power is promised, next step is to know the second suit.
-Suit order is $\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$. If there is no second suit, it auto-zooms to the 1-suiter cases. To summarize, the steps are:
+Suit order is $\hscd$. If there is no second suit, it auto-zooms to the 1-suiter cases. To summarize, the steps are:
 
 \begin{enumerate}
     \item \textbf{\underline{4}}+ cards in in suit 1, cont' as 
@@ -81,7 +81,7 @@ Suit order is $\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$. If ther
 \pagebreak
 
 \subsubsection{4446 when lack of space}\label{sec:4446}
-In lack of space, the step for \textbf{\underline{7}} of 444766 must not be higher than 2NT. The set of windows will be changed to 4446, where 6 means 6 or more cards in the known suit, cont' as \nameref{sec:111}.
+For sparing space for showing shortage, the step for \textbf{\underline{7}} of 444766 must not be higher than 2NT. In lack of space, the set of windows will be changed to 4446, where 6 means 6 or more cards in the known suit, cont' as \nameref{sec:111}.
 
 \noindent Since relay is bounded at 3NT, 3NT will become catch all in lack of space. For example, when relay bid is $3\ddd$, known suit is $\sss$:
 \begin{itemize}
@@ -199,18 +199,32 @@ Used only for hands with shortage. Not for hands like 5422, 6322 or 7222.
     \item 3NT = 1-suiter with suit 3 shortage
 \end{itemize}
 
+\subsection{1NT GI}\label{sec:1n-gi}
+To be used after 2$\ddd$ = any GI.
+
+\begin{itemize}
+    \item 2$\hhh$ = reject $\hhh$ GI
+    \item 2$\sss$ = reject $\sss$ GI (accept $\hhh$ GI)
+    \item 2NT = reject non-major GI (accept $\hhh/\sss$ GI)
+    \item 3$\ccc$ = GF, any 4-card M
+    \item 3$\ddd$ = GF, any 52 Ms
+    \item 3$\hhh$ = GF, 5$\hhh$s 3$\sss$s
+    \item 3$\sss$ = GF, 5$\sss$s 3$\hhh$s
+\end{itemize}
+
+\noindent After 2$\sss$/2NT, 3M = GF, check 3-card.
+
 \section{Opening Scheme}
 \begin{itemize}
-    \item 1$\ccc$ to 1$\sss$ = 14+ 5542 natural open \\
-        open lower suit when same length
-    \item 1NT = 10-13 BAL or (4441)
-    \item 2$\ccc$ to 2$\sss$ = 10-13 5+ cards natural open \\
-        open major suit, then lower suit when same length
-        ($\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$)
+    \item \hyperref[sec:strong-1]{1$\ccc$ to 1$\sss$} = 14+ 5542 natural open \\
+    same length open lower suit
+    \item \hyperref[sec:1n]{1NT} = 10-13 BAL or (4441)
+    \item \hyperref[sec:intermediate-2]{2$\ccc$ to 2$\sss$} = 10-13 5+ cards natural open \\
+        55+ suit priority = $\hscd$
     \item 3$\ccc$ onwards = any preemptive scheme you like
 \end{itemize}
 
-\subsection{After Strong 1 Open}
+\subsection{After Strong 1 Open}\label{sec:strong-1}
 \begin{itemize}
     \item \#1 (or XX) = 8+ relay
     \item \#2 to \#6 or double raise = to play
@@ -228,15 +242,15 @@ Used only for hands with shortage. Not for hands like 5422, 6322 or 7222.
     \item \#1 = 14-16 \\
         after this:
         \begin{itemize}
-            \item \#1 = 10+ GF
+            \item \#1 = 10+ GF, cont' as \nameref{sec:444766}
             \item \#2 to \#5 = to play \\
                 apply competitive bidding system
         \end{itemize}
-    \item \#2+ = 444766 \\
+    \item \#2+ = \nameref{sec:444766} \\
         after any response:
         \begin{itemize}
             \item \#1 = normal relay
-            \item \#2 to \#5 = relay with shortage
+            \item \#2 to \#5 = relay with shortage (as an optional advancement)
         \end{itemize}
 \end{itemize}
 
@@ -260,7 +274,7 @@ Used only for hands with shortage. Not for hands like 5422, 6322 or 7222.
         apply competitive bidding system
 \end{itemize}
 
-\subsection{After 1NT Open}
+\subsection{After 1NT Open}\label{sec:1n}
 This scheme is rather inelastic because upon any overcalls other than double or artificial 2$\ccc$, we should turn to competitive bidding (e.g. Lebensohl).
 
 \begin{itemize}
@@ -273,11 +287,11 @@ This scheme is rather inelastic because upon any overcalls other than double or 
     \item 2$\hhh$ to 3NT = \nameref{sec:2h-3nt-unbal}
 \end{itemize}
 
-\subsection{After Intermediate 2 Open}
+\subsection{After Intermediate 2 Open}\label{sec:intermediate-2}
 \begin{itemize}
     \item \#1 = GI+ relay, cont' as \nameref{sec:444766}
     \item \#2 to \#4 = transfer GI+: short open suit if GF \\
-        match transfer first, then $\hhh \rightarrow \sss \rightarrow \ccc \rightarrow \ddd$ \\
+        match transfer first, then $\hscd$ \\
         only non-GF response is rebid or follow transfer
         
 \end{itemize}
