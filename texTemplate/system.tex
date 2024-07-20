@@ -11,24 +11,26 @@
 \usepackage{enumitem}
 \setlist[enumerate,1]{
     topsep=-0.25em,
-    itemsep=-0.25em, left=0.1em,
+    itemsep=-0.25em, left=0em,
     after=\vspace{0.5em}
+}
+\setlist[itemize]{
+    topsep=-1em,
+    itemsep=-0.15em, left=0em
 }
 \setlist[itemize,1]{
-    topsep=-0.25em,
-    itemsep=-0.25em, left=0.1em,
     label=$\blacktriangleright$,
-    after=\vspace{0.5em}
+    after=\vspace{0.1em}
 }
 \setlist[itemize,2]{
-    topsep=-0.6em,
-    itemsep=-0.25em, left=0.1em,
-    label=$\vartriangleright$
+    label=$\vartriangleright$,
+    after=\vspace{0.1em}
 }
 \setlist[itemize,3]{
-    topsep=-0.6em,
-    itemsep=-0.25em, left=0.1em,
-    label=$\vartriangleright$
+    label=$\bullet$
+}
+\setlist[itemize,4]{
+    label=$\ast$
 }
 \newcommand*{\ccc}{\textcolor{ForestGreen}{\clubsuit}}
 \newcommand*{\ddd}{\textcolor{Orange}{\vardiamondsuit}}

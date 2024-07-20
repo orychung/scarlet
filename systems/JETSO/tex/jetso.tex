@@ -1,9 +1,9 @@
 \documentclass{article}
 \input{../../../texTemplate/system}
 
-\title{Just-Enough Two-Suit Opens (JETSO)}
+\title{\vspace{-1em}Just-Enough Two-Suit Opens (JETSO)}
 \author{O.Y. Chung $\hhh\sss\ccc\ddd$}
-\date{July 2023}
+\date{July 2024}
 
 \begin{document}
 \maketitle
@@ -11,14 +11,14 @@
 \begin{CJK*}{UTF8}{gt}
 
 \section{Abstract}
-Designed for use in vulnerable side only, Just-Enough Two-Suit Opens (JETSO) brings maximized chance of safer signoffs and extra hint in competitive bidding by showing the hand type and for 2/3-suiter case an extra guarantee to hold one of two specified suits.
+Designed for use in vulnerable side only, Just-Enough Two-Suit Opens (JETSO) brings maximized chance of safer signoffs for near-game or below combined power. Extra hint for competitive bidding is provided by showing the hand type at the first bid, where for 2-suiter cases, the second suit is limited to two possibilities.
 
 \section{Elastic Relay Patterns}
-It is a pre-requisite to fully learn RULER before using JETSO because a lot of RULER relay patterns will be reused here.  Following the design of RULER, the main relay is elastic. Minor adjustment to some relay window is needed:
+It is a pre-requisite to fully learn RULER before using JETSO because a lot of RULER relay patterns will be reused.  Following the design of RULER, the main relay is elastic. Minor adjustment to some relay windows is needed:
 \subsection{NLM3R56}\label{sec:nlm3r56}
-By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings is 4441 because 4 is for balanced hand type. To make best use of 3-suiter hands, a 3-suiter window is added. Together with extra windows for splitting the strength and the suit, there can be 7 windows in a typical relay:
+By repeating R564 of RULER, the only case to use the "4" window in 2-suiter openings is 4441. To make best use of 3-suiter hands, a 3-suiter window is added. Together with extra windows for splitting the strength and the suit, there can be 7 windows in a typical relay:
 \begin{enumerate}
-    \item \textbf{\underline{N}}o 4+ in a \hyperref[sec:determine-n-suit]{determined suit}, then: LM3R56
+    \item \textbf{\underline{N}}o 4+ in the \hyperref[sec:determine-n-suit]{determined suit}, then: LM3R56
     \item \textbf{\underline{L}}ow strength, then: 3R56
     \item \textbf{\underline{M}}edium strength, then: R56
     \item \textbf{\underline{3}}-suiter
@@ -54,8 +54,8 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
     \begin{itemize}
         \item 10-13 $\hhh$: \hyperref[sec:1suit]{2$\hhh$}
         \item 10-13 $\sss$: \hyperref[sec:1suit]{2$\sss$}
-        \item 11-13 $\ccc$: 3$\ccc$
-        \item 11-13 $\ddd$: 3$\ddd$
+        \item 11-13 $\ccc$: 3$\ccc$ (cont' like preempt open)
+        \item 11-13 $\ddd$: 3$\ddd$ (cont' like preempt open)
         \item 14+: \hyperref[sec:1c]{1$\ccc$}
     \end{itemize}
     \item 2/3-suiter (54+ in 2 suits or 444+ in 3 suits):\\
@@ -81,20 +81,64 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
     \begin{itemize}
         \item 12-14 BAL:
         \begin{itemize}
-            \item with 4-5$\sss$s: \hyperref[sec:1c1d1h]{1$\sss$}
-            \item with 4-5$\hhh$s: \hyperref[sec:1c1d1h]{1NT}
+            \item with 4-5$\sss$s: 1$\sss$ \hyperref[sec:1c1d-nf]{(all NF)}
+            \item with 4-5$\hhh$s: 1NT \hyperref[sec:1c1d-nf]{(all NF)}
             \item otherwise: \hyperref[sec:1c1d1h]{1$\hhh$}
         \end{itemize}
         \item 18+ BAL: \hyperref[sec:1c1d1h]{1$\hhh$}
         \item 14-19 1-suiter: 2$\ccc/\ddd/\hhh/\sss$ (same as \nameref{sec:1suit})
         \item 20+ 1-suiter: \hyperref[sec:1c1d1h]{1$\hhh$}
     \end{itemize}
-    \item 11+: 1$\hhh$/1$\sss$/1NT/2$\ccc$ 
+    \item 11+ no shortage: 1$\hhh$
+    \begin{itemize}
+        \item 1NT: 12 BAL
+        \begin{itemize}
+            \item 2$\ccc$: any SO
+            \item 2$\ddd$: relay (RULER 1NT without 4441)
+        \end{itemize}
+        \item 2$\ccc$: 13+ (no shortage)
+        \begin{itemize}
+            \item 2$\ddd$: relay (RULER 1NT without 4441)
+            \item 2$\hhh$+: 13-17 (444), shape relay and then:
+            \begin{itemize}
+                \item 13-14: stop in game
+                \item 18: SI (4$\ccc$)
+                \item 19+: SF
+            \end{itemize}
+        \end{itemize}
+        \item 1-suiter break: remained \#1-4 (1$\sss$/2$\ddd$/2$\hhh$/2$\sss$) for 6+ in $\hscd$, with shortage, cont' as RULER 111
+    \end{itemize}
+    \item 11+ shortage: 1$\sss$/1NT/2$\ccc$/2$\ddd$ 
     for 4+$\hhh/\sss/\ccc/\ddd$
     \begin{itemize}
-        \item relay: \#1 (\#1 = min; \#2+ = RULER 444766)
+        \item relay: \#1 (\#1 = min; \#2+ = RULER 444111)
         \item 1-suiter break: \#2-4 for 6+ in another suit ($\hscd$), with shortage, cont' as RULER 111
     \end{itemize}
+    \item 11+ 3-suiter: $2\hhh/2\sss$/2NT/$3\ccc$
+    \begin{itemize}
+        \item GF relay: \#1
+        \item others: 12 NF (auto relay if extra)
+    \end{itemize}
+\end{itemize}\vspace{2em}
+
+\noindent $1\ccc$ Overcalled (up to 1NT):
+\begin{itemize}
+    \item 0-10: P/\#1 (same as $1\ccc$-$1\ddd$)
+    \item 11+ no shortage: X/\#2 (same as $1\ccc$-$1\hhh$)
+    \item 11+ shortage: \#3+ (same as $1\ccc$-$1\sss$+)
+\end{itemize}\vspace{2em}
+
+\noindent $1\ccc$-$1\ddd$ Overcalled (up to 1NT):
+\begin{itemize}
+    \item 12-14 BAL:
+    \begin{itemize}
+        \item with 4-5X (with 1X bid): 1X \hyperref[sec:1c1d-nf]{(all NF)}
+        \item with 4-5X (no 1X bid): 1NT \hyperref[sec:1c1d-nf]{(all NF)}
+        \item otherwise: P \hyperref[sec:1c1d-nf]{(all NF)}
+    \end{itemize}
+    \item 18+ BAL: X (same as $1\ccc$-$1\ddd$-$1\hhh$)
+    \item 14-19 1-suiter: 2$\ccc/\ddd/\hhh/\sss$ (same as \nameref{sec:1suit})
+    \item 20+ 1-suiter: X (same as $1\ccc$-$1\ddd$-$1\hhh$)
 \end{itemize}
 
 \subsection{After 1\CCC-1\DDD-1\HHH}\label{sec:1c1d1h}
@@ -102,19 +146,19 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
     \item 0-5: \hyperref[sec:1c1d1h1s]{1$\sss$}
     \item 6-10: 1NT/2$\ccc/\ddd/\hhh/\sss$
         (same response scheme as RULER open except all GF)
-    \item $<=$ 8 GI with 7+card: 3$\ccc/\ddd/\hhh/\sss$ (all natural)
-\end{itemize}
+    \item 4-8 GI with 7+card: 3$\ccc/\ddd/\hhh/\sss$ (all natural)
+\end{itemize}\vspace{1em}
 
-\noindent The same scheme applies for 1$\ccc$-1$\ddd$-1$\sss$/1NT, with these modifications:
+\subsubsection{All NF cases}\label{sec:1c1d-nf}
+\noindent For all NF cases like 1$\ccc$-1$\ddd$-1$\sss$/1NT, apply these modifications:
 \begin{itemize}
     \item the 0-5 and 6-10 ranges are merged
     \item there is a 4-card major raise (for 2$\sss$ over 1$\sss$, it further implies a mild GI)
-    \item no more GF responses are present (become some natural / artificial GI)
 \end{itemize}
 
 \subsection{After 1\CCC-1\DDD-1\HHH-1\SSS}
 \label{sec:1c1d1h1s}
-\begin{itemize}
+\begin{itemize}\begin{samepage}
     \item 12-14 or 18-21 BAL: 1NT
     \begin{itemize}
         \item BAL: P
@@ -125,8 +169,13 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
         \item \hyperref[sec:1c1d1h1s2c2d]{2$\ddd$} = waiting
         \item 2$\hhh$ to 3NT = RULER 2$\hhh$ to 3NT Unbalanced
     \end{itemize}
-    \item 20+ 1-suiter: 2$\ddd/\hhh/\sss$/NT for $\hhh/\sss/\ccc/\ddd$ (same as \nameref{sec:1suit})
-\end{itemize}
+    \item 20+ 1-suiter: 2$\ddd/\hhh/\sss$/NT for $\hhh/\sss/\ccc/\ddd$
+    \begin{itemize}
+        \item min raise = min NF
+        \item suit below game = max and fit, bid shortage
+        \item game = to play
+    \end{itemize}
+\end{samepage}\end{itemize}
 
 \subsection{After 1\CCC-1\DDD-1\HHH-1\SSS-2\CCC-2\DDD}
 \label{sec:1c1d1h1s2c2d}
@@ -134,10 +183,10 @@ By repeating R564 of RULER, the only possible way to have 4 in 2-suiter openings
     \item 22-24: 2$\hhh$ (or 2$\sss$ if $\sss$ is 2-card longer than $\hhh$) \\
         same as NT overcall, any extra 2M is NF
     \item 25-26: 2NT (same as NT overcall)
-    \item 27+: 3$\ccc$-3NT (RULER 1NT GI)
+    \item 27+: 3$\ccc$-3NT (RULER 1NT GI response)
 \end{itemize}
 
-\subsection{Relay Breaks in Cases Like \texorpdfstring{\\}{}
+\subsection{Relay Breaks After Cases Like \texorpdfstring{\\}{}
 1\CCC-1\HHH-1\SSS-1NT}
 In 1$\ccc$-1$\hhh$-1$\sss$-1NT, the 1NT bid shows a minimum hand of 11-13. After this 1NT, \#1 is GF relay while \#2 to \#6 are natural SO. Pass cannot be used because the maximum of 1NT is still high enough for a game. After an SO bid is chosen, partner can bid further using a competitive bidding scheme (G3LBS).
 
@@ -145,10 +194,10 @@ In 1$\ccc$-1$\hhh$-1$\sss$-1NT, the 1NT bid shows a minimum hand of 11-13. After
 \begin{tabular}{c|c|c}
     \hline
     Case & Min & Max \\ \hline
-    Not passed & 11-13 = F1 & 14+ \\ \hline
-    Passed & 9-10 & 11 = 13+ to relay \\ \hline
+    Passed & n/a & 10-11 \\ \hline
     Overcalled & 9-11 & 12+ \\ \hline
-\end{tabular}
+    Normal & 11-13 = F1 & 14+ \\ \hline
+\end{tabular}\vspace{0.5em}
 
 \noindent The table above summarizes the different strength range to use in different cases. It is important to note that:
 \begin{itemize}
@@ -167,6 +216,9 @@ General approach is to use \#1 to relay, and remaining non-jump bids to escape.
     \item \hyperref[sec:1d-escape]{2$\ccc$} = 0-8 request to stop at 5+card suit
     \item 2$\ddd$ = 0-8 6+$\ddd$s, G3LBS follows
     \item 2$\hhh$ = 0-8 3+$\hhh$s, G3LBS follows
+    \item 2$\sss$/2NT/3$\ccc$ = 9+ Splinter (void if 12+)
+    \item 3$\ddd$ = 7-9 fit $\hhh$ preemptive
+    \item 3$\hhh$ = 0-6 preemptive
 \end{itemize}
 
 \subsubsection{After 1\DDD-1\HHH-1\SSS}
@@ -191,11 +243,12 @@ General approach is to use \#1 to relay, and remaining non-jump bids to escape.
 \subsubsection{After 1\DDD-1\SSS/1NT/2\CCC}\label{sec:1d-escape}
 When partner escapes to lower than 2$\ddd$, both 2$\ddd$ and 2NT can be used to show unbounded strong hand, providing extra chance to resume relay.
 \begin{itemize}
-    \item 2$\ddd$ = 17+ with unlikely fit suit
-    \item 2NT = 17+ with likely fit suit
+    \item 2$\ddd$ = \hyperref[sec:2suit-strong-rebid]{17+} with unlikely fit suit
+    \item 2NT = \hyperref[sec:2suit-strong-rebid]{17+} with likely fit suit
     \item 3$\ccc/\hhh/\sss$ = 15-16 6+card NF
     \item others = correction
 \end{itemize}
+\vspace{1em}
 
 \noindent To the 17+ strong bids, \#1 is GF relay (6-8), other bids are SO. The only exception is when \#1 = 3$\ccc$ is a shown suit, it will become SO and 3$\ddd$ is used for relay. On SO here, if still below 2NT, G3LBS will be used.
 
@@ -204,6 +257,7 @@ When partner escapes to lower than 2$\ddd$, both 2$\ddd$ and 2NT can be used to 
     \item 3$\ccc$ = SO
     \item 3$\ddd$ = 6-8 GF relay
 \end{itemize}
+\vspace{1em}
 
 \noindent Example of using G3LBS occurs at 1$\ddd$-1$\sss$-2$\ddd$:
 \begin{itemize}
@@ -220,12 +274,15 @@ Most responses are symmetric to 1$\ddd$ open, but a difference is made to the ch
     \item \hyperref[sec:1h-escape]{2$\ddd$} = 0-8 $\ddd>\sss>\ccc$
     \item 2$\hhh$ = 0-8 6+$\hhh$s, G3LBS follows
     \item 2$\sss$ = 0-8 3+$\sss$s, G3LBS follows
+    \item 2NT/3$\ccc$/3$\ddd$ = 9+ Splinter (void if 12+)
+    \item 3$\hhh$ = 7-9 fit $\sss$ preemptive
+    \item 3$\sss$ = 0-6 preemptive
 \end{itemize}
 
 \subsubsection{After 1\HHH-1NT/2\CCC/2\DDD}\label{sec:1h-escape}
 \begin{itemize}
-    \item 2$\hhh$ = 17+ with unlikely fit suit
-    \item 2NT = 17+ with likely fit suit
+    \item 2$\hhh$ = \hyperref[sec:2suit-strong-rebid]{17+} with unlikely fit suit
+    \item 2NT = \hyperref[sec:2suit-strong-rebid]{17+} with likely fit suit
     \item 3$\ccc/\ddd/\sss$ = 15-16 6+card NF
     \item others = correction
 \end{itemize}
@@ -242,8 +299,8 @@ Escape space is further reduced. Relay strength requirement is lowered by 1 poin
 
 \subsubsection{After 1\SSS-2\CCC/2\DDD/2\HHH}\label{sec:1s-escape}
 \begin{itemize}
-    \item 2$\sss$ = 18+ with unlikely fit suit
-    \item 2NT = 18+ with likely fit suit
+    \item 2$\sss$ = \hyperref[sec:2suit-strong-rebid]{18+} with unlikely fit suit
+    \item 2NT = \hyperref[sec:2suit-strong-rebid]{18+} with likely fit suit
     \item 3$\ccc/\ddd/\hhh$ = 16-17 6+card NF
     \item others = correction
 \end{itemize}
@@ -256,9 +313,16 @@ Escape space is further reduced. Relay strength requirement is lowered by 1 poin
     \item others = SO
 \end{itemize}
 
+\subsection{After Strong Rebid}\label{sec:2suit-strong-rebid}
+\begin{itemize}
+    \item 3$\ccc$ when $\ccc$ is a shown suit = SO
+    \item \#1 = GF relay, cont' as \hyperref[sec:nlm3r56]{3R56}
+    \item others = SO
+\end{itemize}
+
 \section{Other Opens}
 \subsection{1NT Open}\label{sec:1n}
-RULER 1NT open scheme with the advancement to allow $\hhh$ SO. Such advancement can be used because there is no 4441 cases and it is valuable to have better SO option when vulnerable.
+RULER 1NT open scheme with the advancement to allow $\hhh$ SO is used because there is no 4441 cases and it is valuable to have better SO option when vulnerable.
 
 \subsection{1-Suiter Open at 2-Level}\label{sec:1suit}
 \begin{itemize}
@@ -266,6 +330,7 @@ RULER 1NT open scheme with the advancement to allow $\hhh$ SO. Such advancement 
     \item \#2-\#4 = transfer GI+ (similar to RULER)
 \end{itemize}
 
+\columnbreak
 $$\hhh\sss\ccc\ddd~The~end~\hhh\sss\ccc\ddd$$
 
 \end{CJK*}

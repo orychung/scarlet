@@ -20,13 +20,18 @@ Near the end of relay, where the shape showing side has only a few possible shap
     \item more extreme shapes bids higher, where "more extreme" means:
     \begin{itemize}
         \item longest suit longer \\
-            e.g. $6610 \rightarrow 7222$
+            e.g. $(6610) \rightarrow (7222)$
         \item second longest suit longer \\
-            e.g. $5440 \rightarrow 5521$
+            e.g. $(5440) \rightarrow (5521)$
         \item third longest suit longer \\
-            e.g. $5431 \rightarrow 5540$
+            e.g. $(5431) \rightarrow (5540)$
     \end{itemize}
-    \item with same shape, longing higher suits bids higher
+    \item within same shape, longing higher suits bids higher
+    \begin{itemize}
+        \item $4315 \rightarrow 1354$
+        \item $3415 \rightarrow 4135$
+        \item $4135 \rightarrow 4315$
+    \end{itemize}
 \end{enumerate}
 
 \noindent Shape answering is bounded by 3NT. When out of steps within 3NT, overload the uncoverred shapes on shapes within 3NT with nearest major length. For example, when knowing 6+$\ddd$, 0-1$\ccc$s:
@@ -40,7 +45,7 @@ Near the end of relay, where the shape showing side has only a few possible shap
 
 \subsection{General Principle}
 \begin{itemize}
-    \item for GI+ relay, reserve \#1 for min \\
+    \item for GI+ relay below 2X, reserve \#1 for min \\
         for 2X open, reserve 3X (rebid) for min,
         that implies answers below 3X can be min or max
     \item 3$\ddd$ is the highest relay bid
@@ -112,7 +117,7 @@ After 1-suiter is shown, 3 windows are used to show shortage. Suit order for sho
 \end{itemize}
 
 \subsection{1NT To-Play}\label{sec:1nt-to-play}
-Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards from a total of 16 max suit length (4444/4435/4255). Use of this scheme is an optional advancement. It can be replaced by saying opener's hand is more specific.
+Relay against 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards from a total of 16 max suit length (4444/4435/4255). Use of this scheme is an optional advancement. It can be replaced by saying opener's hand is more specific.
 
 \columnbreak
 
@@ -122,6 +127,7 @@ Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards fro
     \item 2$\hhh$ = major suits reduce 0-1 cards
     \item 2$\sss$+ = major suits reduce 2-3 cards
 \end{itemize}
+\vspace{1em}
 
 \noindent For major suits reduce 0-1 cards:
 \begin{itemize}
@@ -133,6 +139,7 @@ Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards fro
     \item 3$\ddd$+ = major suits reduces similar length \\
         (major suits reduces 0 cards)
 \end{itemize}
+\vspace{1em}
 
 \noindent For major suits reduce 2-3 cards:
 \begin{itemize}
@@ -158,6 +165,7 @@ Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards fro
     \item 3$\ddd$ = 4333
     \item 3$\hhh$ to 3NT = 5 $\ddd$s
 \end{itemize}
+\vspace{1em}
 
 \noindent After 2$\hhh$ to 2$\sss$:
 \begin{itemize}
@@ -165,6 +173,7 @@ Happens after 1$\ccc/\ddd/\hhh$-1NT-2$\ccc$. The scheme is to reduce 3 cards fro
     \item 3$\ccc$ = 5-(332)
     \item 3$\ddd$ to 3NT = 4-(234/324/243/342)
 \end{itemize}
+\vspace{1em}
 
 \noindent Advanced usage: when there is no 4441 cases, let 2$\ccc$ relay include a 5+$\hhh$ GI case. Adjust as:
 \begin{itemize}
@@ -184,6 +193,7 @@ Used only for hands with shortage. Not for hands like 5422, 6322 or 7222.
     \item 3$\ccc$ = 1-suiter with $\ddd$
     \item 3$\ddd$+ = (4441)
 \end{itemize}
+\vspace{1em}
 
 \noindent After 2$\hhh$ to 3$\ccc$:
 \begin{itemize}
@@ -208,6 +218,7 @@ To be used after 2$\ddd$ = any GI.
     \item 3$\hhh$ = GF, 5$\hhh$s 3$\sss$s
     \item 3$\sss$ = GF, 5$\sss$s 3$\hhh$s
 \end{itemize}
+\vspace{1em}
 
 \noindent After 2$\sss$/2NT, 3M = GF, check 3-card.
 
@@ -252,16 +263,12 @@ To be used after 2$\ddd$ = any GI.
 \end{itemize}
 
 \subsubsection{After To-Play}
+If no space for relay, directly apply competitive bidding system \\
+Otherwise:
 \begin{itemize}
     \item 1NT/2M = 17-19 NF GI \\
         apply competitive bidding system
-    \item \#1 (after excluding 1NT/2M) = 20+ \\
-        as strong probe if To-Play bid is less specific:
-        \begin{itemize}
-            \item \#1 = GF relay (resume \nameref{sec:444766})
-            \item \#2 to \#6 = to play (double neg)
-        \end{itemize}
-        as relay ask if To-Play bid is 1NT or specific:
+    \item \#1 (after excluding 1NT/2M) = 20+ relay
         \begin{itemize}
             \item \#1 = min
             \item \#2+ = GF (as \nameref{sec:444766} or
@@ -306,6 +313,7 @@ Over 1-level suit:
     \item 2NT+ = whatever preemptive scheme
     \item Cuebid at 3-level = strong and extreme hands to avoid X being passed
 \end{itemize}
+\vspace{1em}
 
 \noindent Over 1NT, X become 18+ or 15-18 BAL.
 
